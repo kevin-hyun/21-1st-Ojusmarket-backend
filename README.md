@@ -77,7 +77,7 @@ Frontend | HTML5, SASS, REACT, Javascript
 
 Backend |  Python, Django web framework,  Bcrypt, My SQL
 
-Common | Restful API, KAKAO post API, AWS(EC2,RDS)
+Common | Restful API, AWS(EC2,RDS)
 
 ### 👍 커뮤니케이션
 
