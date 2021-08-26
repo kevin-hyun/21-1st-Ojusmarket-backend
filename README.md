@@ -87,7 +87,6 @@ APP | [Notion](https://www.notion.so/163f5d1be77f4dd7a33ec0377c2f0a6a) , [Trello
 
 Scrum | 스크럼 방식을 사용하여 매일 아침 미팅을 통해 어제 한 일, 오늘 할 일, blocker 세 가지를 공유하며 팀원들과 미팅을 진행하였습니다.
 
-![SCRUM](https://user-images.githubusercontent.com/78678551/122676713-282db980-d21a-11eb-9105-ea9fb73a2fb8.png)
 ---
 
 ## **Reference**
