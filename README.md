@@ -61,13 +61,13 @@ Orders | 유저 정보와 상품 정보 조회, 배송 상태 저장, 결제하�
 
 ### 🧑‍💻 담당기능
 
-DB modeling | Aquery 툴로 커머스 사이트에 사용하는 형태로 cart , order, order_status로 관리 
+DB modeling | `Aquery`로 커머스 사이트에 사용하는 형태인 `cart` , `order`, `order_status`로 관리 
 
-Ingredients | 상품정보, main 과 sub 카테고리, 관련 레시피와 연결 (M:M관계 참조 - Django ORM 활용 )
+Ingredients | 상품정보, main 과 sub 카테고리, 관련 레시피와 연결 (`M:M관계 참조 - Django ORM 활용` )
 
-Recipes |  레시피 카테고리, 관련 재료와 연결 (M:M관계 참조 - Django ORM 활용 )
+Recipes |  레시피 카테고리, 관련 재료와 연결 (`M:M관계 참조 - Django ORM 활용` )
 
-AWS | S3와 RDS를 통한 배포 (웹서버 구동을 위해 파이썬 gunicorn 사용) 
+AWS | `S3`와 `RDS`를 통한 배포 (웹서버 구동을 위해 파이썬 `gunicorn` 사용) 
 
 
 
