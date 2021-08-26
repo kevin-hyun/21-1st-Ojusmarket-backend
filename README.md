@@ -10,6 +10,7 @@
 [Backend](https://github.com/wecode-bootcamp-korea/21-1st-Ojusmarket-backend) | 박준영, 박지우, 장동국, 현상협
 
 > *"소통은 무조건 중요하다! 사랑해요 오저스마켓팀" - ojusmarket -*
+> 
 
 **개발기간**
 
@@ -39,12 +40,7 @@
 
 크게 사용자 (users), 재료 (ingredients), 레시피(recipes), 장바구니(carts), 주문하기(orders)를 우선적으로 구성하고, 이에 따른 세부 모델링을 구성하는 순서로 진행 하였습니다.
 
-모델링 회고 한마디
 
-> 초기 테이블 구성에서 carts 와 orders 부분에서 order_item 을 만들지 않아 cart-order참조의 경우에서 orderitem을 intertable로 만드는 코드로 수정해야 했습니다.
-또한 orderitem 테이블을 생성하면서 carts의 아이템을 직접적으로 삭제할 경우 orderitem도 사라지는 경우를 간과한 부분이 아쉽습니다.
-
-> 이에 따라 조금 더 파생될 수 있는 경우의 수와 필요한 필드에 대해서 진지하게 고민하고 로직구현을 시작해야겠다고 느끼게 되었습니다.
 
 ---
 
@@ -60,11 +56,20 @@ Carts | 상세페이지를 통한 장바구니 페이지 연결, 재료 삭제, 
 
 Orders | 유저 정보와 상품 정보 조회, 배송 상태 저장, 결제하기 이동 시 결제된 장바구니 상품 삭제  
 
-기능구현 회고 한마디
-
-> 여러 orm이 있었는데 손에 익은 것만 사용하려는 경향이 있어 초기 기능구현에 비효율적인 코드들이 있었습니다. 효율성을 높이기 위해 다양한 orm 을 사용하다보니 연산속도와 코드 가독성을 위해서 django에서 제공하는 orm을 (related name, annotate등) 적극적으로 활용해야 할 필요성을 느꼈습니다.
-
 ---
+
+
+### 🧑‍💻 담당기능
+
+DB modeling | Aquery 툴로 커머스 사이트에 사용하는 형태로 cart , order, order_status로 관리 
+
+Ingredients | 상품정보, main 과 sub 카테고리, 관련 레시피와 연결 (M:M관계 참조 - Django ORM 활용 )
+
+Recipes |  레시피 카테고리, 관련 재료와 연결 (M:M관계 참조 - Django ORM 활용 )
+
+AWS | S3와 RDS를 통한 배포 (웹서버 구동을 위해 파이썬 gunicorn 사용) 
+
+
 
 ### 💻 사용 기술
 
